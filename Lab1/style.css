@@ -22,7 +22,7 @@
     margin: 0 -8px 0 -8px;
 }
 
-.header__text {
+.header-text {
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -37,7 +37,7 @@
     height: auto;
 }
 
-.image__square {
+.image-square {
     float:left;
     width: 7rem;
     height: 7rem;
@@ -48,21 +48,21 @@
     margin: 0 32px 48px 0;
 }
 
-.text__square {
+.text-square {
     font-size: 20px;
 }
 .head {
     font-size: 2rem;
 }
 
-.content__link {
+.content-link {
     text-align: center;
 }
-.content__link > a:link, .content__link > a:visited {
+.content-link > a:link, .content-link > a:visited {
     color: red;
 }
 
-.content__head--sec > span {
+.content-head--sec > span {
     color: red;
 }
 
@@ -70,37 +70,37 @@
     margin: 6px 12px;
     font-size: 18px;
 }
-.list__no-marker {
+.list-no-marker {
     list-style-type: none;
     margin: -1rem 0 0 -2.5rem;    
 }
 
-.list__item {
+.list-item {
     line-height: 2;
 }
-.list__item > span {
+.list-item > span {
     letter-spacing: 5px;
     color:aqua;
 }
 
-.item__italic {
+.item-italic {
     font-style: italic;
 }
-.item__bold {
+.item-bold {
     font-weight: bold;
 }
-.item__underline {
+.item-underline {
     text-decoration: underline;
 }
-.item__line {
+.item-line {
     text-decoration: line-through;
     padding-top: 1rem;
 }
 
-.floated__right {
+.floated-right {
     float: right;
 }
-.floated_left {
+.floated-left {
     float: left;
 }
 
@@ -117,10 +117,10 @@
     text-align: center;
     border-collapse: separate;
 }
-.tb__1 {
+.tb-1 {
     background-color: green;
 }
-.tb__7 {
+.tb-7 {
     background-color: red;
 }
 .tb {
