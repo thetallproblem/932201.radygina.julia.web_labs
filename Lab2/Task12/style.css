@@ -1,0 +1,35 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-color: aqua;
+    
+    border-color: green;
+    border-width: thin;
+    border-style: solid;
+}
+
+.nav {
+    float:left;
+    width: 250px;
+
+    background-color: bisque;
+    margin-top: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.main {
+    background-color: gray;
+    margin-left: 260px;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: disc;
+}

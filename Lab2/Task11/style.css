@@ -1,0 +1,17 @@
+.main {
+    background-color: aqua;
+    border-color: green;
+    border-width: thin;
+    border-style: solid;
+
+    height: 265px;
+}
+
+.image {
+    float: right;
+}
+
+.text {
+    float: left;
+    width: auto;
+}

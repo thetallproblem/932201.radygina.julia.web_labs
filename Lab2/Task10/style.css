@@ -1,0 +1,13 @@
+.float_box {
+    background-color: aquamarine;
+    
+    width: 200px;
+    height: 100px;
+
+    margin: 1rem;
+}
+
+.bisque_box {
+    background-color:bisque;
+    width: 100%;
+}

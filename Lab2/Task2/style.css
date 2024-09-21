@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+header {
+    width: 100%;
+    background-color: #EAEAEA;
+    padding: 0.5rem 0.5rem 2rem;
+}
+
+main {
+    display:flex;
+}
+
+span {
+    color: red;
+    font-style: italic;
+}
+
+.left_column {
+    padding: 0.1rem 1rem 0.5rem 1rem;
+    width: 25%;
+    height: 25%;
+    float: left;
+    background-color: #C8FC98;
+}
+
+.content_column {
+    flex: 1;
+    padding: 0.1rem 1rem 0.5rem 1rem;
+}
+
+.right_column {
+    width: 200px;
+    padding: 0.1rem 1rem 0.5rem 1rem;
+    float: right;
+    background-color: #FFFF80;
+    line-height: 150%;
+}
+
+.inline_head {
+    display: inline;
+}
+

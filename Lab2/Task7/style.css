@@ -1,0 +1,68 @@
+
+.purple_block {
+    position: static;
+    background-color: blueviolet;
+    color: white;
+
+    width: 120px;
+    height: 80px;
+}
+
+.red_block {
+    position: relative;
+    background-color: darkred;
+    color: white;
+
+    width: 120px;
+    height: 80px;
+}
+
+.peru_block {
+    position: relative;
+    background-color: peru;
+    color: white;
+
+    width: 120px;
+    height: 80px;
+
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.indian_red_block {
+    position: relative;
+    background-color: indianred;
+    color: white;
+
+    z-index: 100;
+
+    width: 500px;
+    height: 400px;
+}
+.child_block {
+    position: absolute;
+    background-color: indigo;
+    color: white;
+
+    padding-right: 0;
+
+    width: 300px;
+    height: 200px;
+
+    margin-top: 80px;
+    margin-left: 200px;
+}
+
+.green_block {
+    position: fixed;
+    background-color: green;
+    color: white;
+
+    float: right;
+    right: 0;
+    bottom: 0;
+
+    width: auto;
+    height: 80px;
+}

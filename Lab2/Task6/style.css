@@ -1,0 +1,24 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.content {
+    margin: 1rem auto;
+    width: 500px;
+}
+
+.border_content {
+    margin: 1rem auto;
+    width: 500px;
+    padding: 4rem;
+
+    border-color: blue;
+    border-style: solid;
+    border-width: 10px;
+}

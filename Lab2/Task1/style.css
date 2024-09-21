@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+header {
+    width: 100%;
+    background-color: #EAEAEA;
+    padding: 0.5rem 0.5rem 2rem;
+}
+
+main {
+    display:flex;
+}
+
+span {
+    color: red;
+    font-style: italic;
+}
+
+.left_column {
+    padding: 0.1rem 1rem;
+    width: 200px;
+    float: left;
+    background-color: #C8FC98;
+    line-height: 150%;
+}
+
+.content_column {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.inline_head {
+    display: inline;
+}
+
