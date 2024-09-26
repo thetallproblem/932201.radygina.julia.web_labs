@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+
+    height: 100%;
+}
+
+header {
+    background-color: green;
+    color: white;
+    font-size: x-large;
+
+    padding: 0.8rem;
+
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: large;
+
+    padding: 0.3rem;
+
+    text-align: center;
+}
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 768px;
+    display:flex;
+    flex-direction: row;
+    align-content: flex-start;
+
+    min-height: 100vh;
+}
+
+.menu {
+    background-color: red;
+    list-style: none;
+
+    flex-shrink: 1;
+    flex-basis: 19.5rem;
+    padding: 2rem 2rem 1rem 3rem;
+}
+.menu_item {
+    padding-bottom: 0.5rem;
+}
+.menu_item a {
+    color: white;
+    display: block;
+}
+.menu_item a:hover {
+    background-color: green;
+}
+
+.content {
+    background-color: white;
+    padding: 2rem 2rem 0.5rem 2rem;
+
+    text-align: justify;
+    flex-shrink: 2;
+}
+.content ::first-letter {
+    color: red;
+    font-size: x-large;
+}
+.content ::selection {
+    color: white;
+    background-color: green;
+}
