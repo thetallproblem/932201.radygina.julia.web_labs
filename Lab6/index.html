@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Frontend Task 6</title>
+        <script src="lab6.js"></script>
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="menu">
+                <button onclick="open_img('img_1', 'lc', 'rc')">Левая колонка</button>
+                <button onclick="open_img('', 'lc', 'rc')">Обе две</button>
+                <button onclick="open_img('img_2', 'rc', 'lc')">Правая колонка</button>
+            </div>
+    
+            <div class="images">
+                <div class="left_col" id="lc">
+                    <img src="cat.jpg" class="img" id="img_1">
+                </div>
+                <div class="right_col" id="rc">
+                    <img src="dog.jpg" class="img" id="img_2">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
