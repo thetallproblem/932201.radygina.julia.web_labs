@@ -1,0 +1,15 @@
+.fig_buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    margin-right: 0.3rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    /*background: linear-gradient(gainsboro,lightgray);*/
+}
+
+.num_inp {
+    width: 150px;
+}

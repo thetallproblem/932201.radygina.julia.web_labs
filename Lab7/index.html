@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Frontend Task 7</title>
+        <script src="lab7.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <input type="number" id="num" class='num_inp' value="1" min='1' max='10'/>
+            
+            <div class="fig_buttons">
+                <button onclick="create_fig('square', 'num')">Квадрат</button>
+                <button onclick="create_fig('triangle', 'num')">Треугольник</button>
+                <button onclick="create_fig('circle', 'num')">Круг</button>
+            </div>
+        </div>
+
+        <div id="space" class="space"></div>
+    </body>
+</html>
