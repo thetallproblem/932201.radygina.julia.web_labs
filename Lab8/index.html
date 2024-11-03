@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Frontend Task 8</title>
+        <script src="lab8.js"></script>
+    </head>
+
+    <body>
+        <ul class="list", id="list">
+            <li id="elem" class="elem">
+                <input name="name" id="name" class="inp"/>
+                <input name="val" id="val" class="inp"/>
+                <button id="up" class="but_up" onclick="(up_el(this))"></button>
+                <button id="down" class="but_down" onclick="(down_el(this))"></button>
+                <button id="del" class="but_del" onclick="(del_el(this))"></button>
+            </li>
+        </ul>
+        
+        <button id="add" class="but" onclick="add_el()">Добавить элемент</button>
+        <br>
+        <button id="save" class="but" onclick="save_list()">Сохранить</button>
+        
+    </body>
+</html>

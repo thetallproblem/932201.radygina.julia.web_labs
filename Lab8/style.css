@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.elem {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    list-style: none;
+}
+
+.inp {
+    width: 150px;
+    height: 20px;
+}
+
+.but_up {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+}
+.but_up::before {
+    content: "\2191";
+}
+
+.but_down {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    content: "\2193";
+}
+.but_down::before {
+    content: "\2193";
+}
+
+.but_del {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    content: "\00D7";
+}
+.but_del::before {
+    content: "\00D7";
+}
+
+.but {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: auto;
+}
