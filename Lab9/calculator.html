@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Calculator</title>
+        <script src="lab9.js"></script>
+    </head>
+
+    <body>
+        <div class="calculator_area">
+            <table class="buttons">
+                <tr>
+                    <td colspan="5"><pre id="display"  class="display">0</pre></td>
+                </tr>
+                <tr>
+                    <td><button class="bt" onclick="addToDisplay('7')">7</button></td>
+                    <td><button class="bt" onclick="addToDisplay('8')">8</button></td>
+                    <td><button class="bt" onclick="addToDisplay('9')">9</button></td>
+                    <td><button class="bt" onclick="addToDisplay('/')">/</button></td>
+                    <td><button class="bt" onclick="clearDisplay()">C</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="bt" onclick="addToDisplay('4')">4</button></td>
+                    <td><button class="bt" onclick="addToDisplay('5')">5</button></td>
+                    <td><button class="bt" onclick="addToDisplay('6')">6</button></td>
+                    <td><button class="bt" onclick="addToDisplay('*')">*</button></td>
+                    <td><button class="bt" onclick="clearLastEl()">&lt;-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="bt" onclick="addToDisplay('1')">1</button></td>
+                    <td><button class="bt" onclick="addToDisplay('2')">2</button></td>
+                    <td><button class="bt" onclick="addToDisplay('3')">3</button></td>
+                    <td><button class="bt" onclick="addToDisplay('-')">-</button></td>
+                    <td rowspan="2"><button class="bt" onclick="calculate()">=</button></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button  class="bt" onclick="addToDisplay('0')">0</button></td>
+                    <td ><button class="bt" onclick="addToDisplay('.')">.</button></td>
+                    <td><button class="bt" onclick="addToDisplay('+')">+</button></td>
+                </tr>
+            </div>
+        </div>
+    </body>
+</html>
