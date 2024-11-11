@@ -17,8 +17,7 @@ function addToDisplay(val) {
         currentDisplay = currentDisplay.substring(0, currentDisplay.length - 1);
         currentDisplay += val;
     }
-    else if (!(val === "." && last_let === ".")&&!(val==="." && act.includes(last_let))
-        &&!(act.includes(val)&&last_let===".")&& !(check_point() && val === "."))
+    else if (!(act.includes(last_let) && val === ".") && !(check_point() && val === "."))
         currentDisplay += val;
         
 
