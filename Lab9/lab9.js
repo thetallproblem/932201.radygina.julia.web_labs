@@ -1,10 +1,26 @@
 let currentDisplay = "0";
+const act = ["+", "-", "*", "/"];
+
+function check_point() {
+    for (let i = currentDisplay.length - 1; !act.includes(currentDisplay[i]) && i>=0; i--)
+        if (currentDisplay[i] === ".")
+            return true;
+    return false;
+}
 
 function addToDisplay(val) {
-    if (currentDisplay == "0")
+    let last_let = currentDisplay.charAt(currentDisplay.length - 1); 
+
+    if (currentDisplay == "0" && val != "." && !act.includes(val))
         currentDisplay = val;
-    else
+    else if (act.includes(val) && act.includes(last_let)) {
+        currentDisplay = currentDisplay.substring(0, currentDisplay.length - 1);
         currentDisplay += val;
+    }
+    else if (!(val === "." && last_let === ".")&&!(val==="." && act.includes(last_let))
+        &&!(act.includes(val)&&last_let===".")&& !(check_point() && val === "."))
+        currentDisplay += val;
+        
 
     updateDisplay();
 }
@@ -16,14 +32,12 @@ function updateDisplay() {
     let s2 = "";
     let i = currentDisplay.length-1;
 
-    while (currentDisplay[i] != "*" && currentDisplay[i] != "/"
-        && currentDisplay[i] != "+" && currentDisplay[i] != "-" && i>=0) {
+    while (!act.includes(currentDisplay[i]) && i>=0) {
             s2 += currentDisplay.charAt(i);
             i--;
     }
 
-    if (i===0 && (currentDisplay[i] === "*" || currentDisplay[i] === "/"
-        ||currentDisplay[i] === "+" || currentDisplay[i] === "-")){
+    if (i===0 && act.includes(currentDisplay[i])){
             i = -1;
             s2 += currentDisplay.charAt(0);
         }
