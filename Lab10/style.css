@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.curtain {
+    position: relative;
+    background-image: url("images/Curtain.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    transition: margin-top 0.2s linear;
+    cursor: pointer;
+    z-index: 2;
+}
+.curtain:hover {
+    margin-top: -5vh;
+}
+
+.lamp {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    z-index: 1;
+    background: none;
+}
+.lamp_img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;    
+}
+
+.light {
+    position: absolute;
+
+    left: 380px;
+    top: 85px;
+    height: 0; 
+    width: 80px;
+
+    border-bottom: 600px solid yellow;
+    border-left: 350px solid transparent;
+    border-right: 350px solid transparent;
+    opacity: 0;
+
+    transition: opacity 0.2s linear;
+    z-index: 4;  
+
+    pointer-events: none;
+}
+
+.magic {
+    position: absolute;
+
+    left: 735px;
+    top: 85px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.magician {
+    object-fit: cover;
+    position: absolute;
+    background: none;
+
+    height: 240px;
+    width: 320px;
+    top: 350px;
+    left: -200px;
+
+    filter: none;
+}
+
+.hat {
+    object-fit: contain;
+    transform: rotate(180deg);
+    position: absolute;
+    background: none;
+
+    height: 125px;
+    width: 125px;
+    top: 400px;
+    left: 100px;
+    z-index: 2;
+}
+
+.rabbit {
+    object-fit: contain;
+    position: absolute;
+    background: none;
+
+    height: 50px;
+    width: 50px;
+    top: 365px;
+    left: 140px;
+    z-index: 1;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.bird {
+    object-fit: contain;
+    position: absolute;
+    background: none;
+
+    height: 50px;
+    width: 50px;
+    top: 450px;
+    left: 140px;
+    z-index: 1;
+    cursor: pointer;
+    pointer-events: auto;
+}
